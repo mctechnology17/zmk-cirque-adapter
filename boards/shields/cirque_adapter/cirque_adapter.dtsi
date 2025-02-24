@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2020 Pete Johanson
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/ {
+    glidepoint_listener: glidepoint_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&glidepoint>;
+    };
+};
+
+&pro_micro_i2c {
+    status = "okay";
+
+    glidepoint: glidepoint@0 {
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>;
+        status = "okay";
+        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
+        sensitivity = "2x";
+        sleep;
+    };
+};

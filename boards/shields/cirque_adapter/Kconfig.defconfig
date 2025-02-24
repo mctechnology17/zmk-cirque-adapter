@@ -1,0 +1,19 @@
+if SHIELD_CIRQUE_ADAPTER_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_POINTING
+    default y
+
+config I2C
+	default y
+
+endif
+
+if SHIELD_CIRQUE_ADAPTER_LEFT || SHIELD_CIRQUE_ADAPTER_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

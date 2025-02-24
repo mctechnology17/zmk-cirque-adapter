@@ -1,0 +1,8 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_CIRQUE_ADAPTER_LEFT
+    def_bool $(shields_list_contains,cirque_adapter_left)
+
+config SHIELD_CIRQUE_ADAPTER_RIGHT
+    def_bool $(shields_list_contains,cirque_adapter_right)

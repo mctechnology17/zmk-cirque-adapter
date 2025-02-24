@@ -1,0 +1,12 @@
+file_format: "1"
+id: cirque_adapter
+name: Cirque Adapter
+type: shield
+url: https://github.com/mctechnology17/zmk-cirque-adapter
+requires: [pro_micro] # xiao??? I not sure hier for now :)
+exposes: [i2c_oled]
+features:
+  - pointer
+siblings:
+  - cirque_adapter_left
+  - cirque_adapter_right
