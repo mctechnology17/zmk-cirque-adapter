@@ -3,20 +3,21 @@ https://github.com/mctechnology17/zmk-cirque-adapter/blob/main/CHANGELOG.txt
 
 How the versions work:
 - vX.Y.Z          released from the branch `main`
+- v0.0.3.N        fixes for ZMK v0.3, from the branch `zmk-v0.3`
 - New work is developed on the branch `dev`
 
 # FEATURES NEXT (not released yet)
 =======================================
 # CHANGES
+- [x] README: versions, branches and tags explained
 - [x] CHANGELOG.txt added
 
 # TODO
 - [ ] Test on hardware
-- [ ] Verify the build with ZMK v0.3 (the branch `zmk-v0.3` is created after that)
 
-# FEATURES v0.0.3 (Nov 18, 2026)
+# FEATURES v0.0.3 (Nov 18, 2026) · ZMK v0.3
 =======================================
-First tagged version: snapshot of everything published until this date. This module has not been tested on hardware.
+First tagged version: snapshot of everything published until this date. Build verified with ZMK v0.3. This module has not been tested on hardware.
 
 # NEW FEATURES
 - [x] Initial shields: `cirque_adapter_left` and `cirque_adapter_right`
