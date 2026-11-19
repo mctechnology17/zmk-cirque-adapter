@@ -14,6 +14,7 @@
 
 </div>
 <!-- mc-follow-top:end -->
+
 This module allows you to configure the drivers for your keyboard divided in the slave part.
 
 Compatible with all boards with pro micro like the Nice!Nano, Puchi-Ble, clones and others.
