@@ -3,6 +3,17 @@
 > INSTALL IT YOU DO IT AT YOUR OWN RISK !!!!
 
 # Cirque Adapter
+
+<!-- mc-follow-top:start -->
+<div align="center">
+
+  <a href="https://youtube.com/@mctechnology17"><img align="center" alt="MC Technology | YouTube" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/youtube.png" /></a>
+  <a href="https://www.instagram.com/mctechnology17/"><img align="center" alt="MC Technology | Instagram" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/instagram.png" /></a>
+  <a href="https://www.facebook.com/mctechnology17/"><img align="center" alt="MC Technology | Facebook" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/facebook.png" /></a>
+  <a href="https://www.tiktok.com/@mctechnology17"><img align="center" alt="MC Technology | TikTok" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/tiktok.png" /></a>
+
+</div>
+<!-- mc-follow-top:end -->
 This module allows you to configure the drivers for your keyboard divided in the slave part.
 
 Compatible with all boards with pro micro like the Nice!Nano, Puchi-Ble, clones and others.
@@ -94,5 +105,20 @@ include:
   - board: nice_nano//zmk
     shield: corne_right cirque_adapter_right
 ```
+
+<!-- mc-follow:start -->
+# Support this project
+
+This is a personal project that I build in my free time. If it is useful to
+you, the best way to help is to follow and subscribe:
+
+[YouTube](https://youtube.com/@mctechnology17) · [Instagram](https://www.instagram.com/mctechnology17/) · [Facebook](https://www.facebook.com/mctechnology17/) · [TikTok](https://www.tiktok.com/@mctechnology17)
+
+I make videos about split keyboards, ZMK and open source (in Spanish, long
+videos with English subtitles). Every follow and every subscription helps me a
+lot and keeps me motivated to bring more to the open source community.
+
+Thank you for every report and every issue: they make these projects better.
+<!-- mc-follow:end -->
 
 [//]: # ( vim: set fdm=marker: )
