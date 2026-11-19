@@ -6,6 +6,17 @@ How the versions work (the third number is the ZMK version):
 - v0.0.4.N        versions for the next ZMK version (v0.4)
 - New work is developed on the branch `dev`
 
+# FEATURES v0.0.4 (not released yet, branch `zmk-v0.4`) · next ZMK (Zephyr 4.1)
+=======================================
+Migration to the next ZMK version. This branch does not build with ZMK v0.3: use `main` or `zmk-v0.3` for that.
+
+# CHANGES
+- [x] Uses the Cirque Pinnacle driver that comes with Zephyr 4.1: `cirque-input-module` is no longer needed in `west.yml`
+- [x] Renamed properties: `dr-gpios` is now `data-ready-gpios`, `sleep` is now `sleep-mode-enable`
+- [x] Taps are opt in with the new driver: `primary-tap-enable` added, so tapping keeps working
+- [x] README: new board names (`nice_nano//zmk`)
+- [ ] Not tested on hardware yet
+
 # FEATURES NEXT (not released yet)
 =======================================
 # CHANGES

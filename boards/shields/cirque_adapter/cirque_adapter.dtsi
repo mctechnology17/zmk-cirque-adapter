@@ -19,8 +19,11 @@
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
         status = "okay";
-        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
+        /* ZMK v0.4 (Zephyr 4.1) uses the Cirque Pinnacle driver of Zephyr, not the
+         * cirque-input-module: the properties have new names and taps are opt in. */
+        data-ready-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
         sensitivity = "2x";
-        sleep;
+        sleep-mode-enable;
+        primary-tap-enable;
     };
 };

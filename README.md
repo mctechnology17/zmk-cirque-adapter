@@ -44,12 +44,12 @@ Every release says which ZMK version it was tested with. The full list of change
 
 - **Example for the left Shield:**
   ```bash
-  west build -b nice_nano_v2 -- -DSHIELD="corne_left cirque_adapter_left"
+  west build -b nice_nano//zmk -- -DSHIELD="corne_left cirque_adapter_left"
   ```
 
 - **Example for the right Shield:**
   ```bash
-  west build -b nice_nano_v2 -- -DSHIELD="corne_right cirque_adapter_right"
+  west build -b nice_nano//zmk -- -DSHIELD="corne_right cirque_adapter_right"
   ```
 
 # Configuration
@@ -60,15 +60,15 @@ CONFIG_INPUT_PINNACLE=y
 ```
 
 To use this module, first add it to your `config/west.yml` by adding a new
-entry to `remotes` and `projects`:
+entry to `remotes` and `projects`. With ZMK v0.4 (Zephyr 4.1) the driver of the
+Cirque Pinnacle comes with Zephyr, so the `cirque-input-module` is no longer
+needed:
 
 ```yaml
 manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: petejohanson # <-- enable the drivers
-      url-base: https://github.com/petejohanson
     - name: mctechnology17 # <-- enable this module
       url-base: https://github.com/mctechnology17
   projects:
@@ -76,12 +76,9 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: cirque-input-module # <-- enable the drivers
-      remote: petejohanson
-      revision: main
     - name: zmk-cirque-adapter # <-- enable this module
       remote: mctechnology17
-      revision: main
+      revision: zmk-v0.4
   self:
     path: config
 ```
@@ -91,9 +88,9 @@ Now simply indicate in the board and the shield in the `build.yaml` file:
 ```yaml
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: corne_left cirque_adapter_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: corne_right cirque_adapter_right
 ```
 
